@@ -46,9 +46,6 @@ source="
 	https://www.vtk.org/files/release/${pkgver%.*}/VTK-$pkgver.tar.gz
 	https://www.vtk.org/files/release/${pkgver%.*}/VTKData-$pkgver.tar.gz
 	https://www.vtk.org/files/release/${pkgver%.*}/VTKLargeData-$pkgver.tar.gz
-	disable-tests.patch
-	include-cstdint.patch
-	lfs64.patch
 	unistd.patch
 	"
 builddir="$srcdir/VTK-$pkgver"
@@ -89,8 +86,5 @@ sha512sums="
 2722dc8186779df1af5c534f26b20186ea33cb3bca2cef8cb333542b12e738382616e26e8d4d0341cb98c30403f8a896d77ddb04adb07e26d0d548c4a34b7d2f  VTK-9.3.0.tar.gz
 385d609c2adc1746c073690b58a3fc25e496946c03f08e6c9e0a69ee406cee447e66d267986c3e5ba9006dd1cb0015b68134bb3c375ae41aef8f3b1e0d923d51  VTKData-9.3.0.tar.gz
 d87eb0fb4ce27ae9f4363c54bb711e66c5d2dbcdf508cb5fae9fcc1574407df2816f29d20037297b834440cd8a54fcf8e1d6db14700054f057bff2fe48404d33  VTKLargeData-9.3.0.tar.gz
-53dc8a9f9680bd124399161f6703aa2a4e1ce3460b237de1858e2abff128628769a08484f927a4d0aa87c26abd279025391c6206751a68d4ba8dc7b0ef96e1d1  disable-tests.patch
-7f05d7815f5c99e00af1fe891fd9251e353271cc53fc72a8463a06da23e2614cb80e331aac566608868d01ada74672f25217c7bfe6d645218256a0ed9e4b54dd  include-cstdint.patch
-ec8d73f9fa425c4ad4caa9031e656ecb2d89db7ea31df0fa029ef45dc832b76557b4fef306d2c40ca8694b4bad8f37c0c8672face34728f1bcc764c6df039c6b  lfs64.patch
-0f9135c421344f789db64ad46f6acd452214de8f1d4696dea3cd1d3517d0057d277a4d01e82804ffb7db086fd7527e511baa1b24a38826aec5c44872610ca0cb  unistd.patch
+5bc2d4c66c516880ded8bc9f92cb5b4aed057b70c2f18c083544fa39ba63b7aed99738cced81f25a134ebe02302049f4abbef8f7ea156fa47ab4fa386286b7e8  unistd.patch
 "
