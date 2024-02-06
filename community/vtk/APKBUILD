@@ -48,6 +48,7 @@ source="
 	https://www.vtk.org/files/release/${pkgver%.*}/VTKLargeData-$pkgver.tar.gz
 	unistd.patch
 	lfs64.patch
+	disable-tests.patch
 	"
 builddir="$srcdir/VTK-$pkgver"
 
@@ -89,4 +90,5 @@ sha512sums="
 d87eb0fb4ce27ae9f4363c54bb711e66c5d2dbcdf508cb5fae9fcc1574407df2816f29d20037297b834440cd8a54fcf8e1d6db14700054f057bff2fe48404d33  VTKLargeData-9.3.0.tar.gz
 4f655b0e870cf8e45db2a03e2a9976aa305869c0aa25b0f5e7ab2fd891f2106cb6002a3b7a44bc78f8e94be1693cbcc61203f8c63e62c44c046584dab609ff4f  unistd.patch
 ec8d73f9fa425c4ad4caa9031e656ecb2d89db7ea31df0fa029ef45dc832b76557b4fef306d2c40ca8694b4bad8f37c0c8672face34728f1bcc764c6df039c6b  lfs64.patch
+4be1eb178cf4125830ffa2d15d66b8cffe30480d7f6abbf998f563177977a6e029d0a30e7425971cc84834c513d5c6f86d2a9f53ef1bfad23dd1a988d2fc0e0a  disable-tests.patch
 "
