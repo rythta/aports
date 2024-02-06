@@ -1,8 +1,8 @@
 # Contributor: Marian Buschsieweke <marian.buschsieweke@ovgu.de>
 # Maintainer: Aiden Grossman <agrossman154@yahoo.com>
 pkgname=vtk
-pkgver=9.2.6
-pkgrel=4
+pkgver=9.3.0
+pkgrel=0
 pkgdesc="A software system for 3D computer graphics, image processing and visualization"
 url="https://vtk.org/"
 # s390x blocked by netcdf
@@ -31,6 +31,7 @@ depends_dev="
 	tk-dev
 	unixodbc-dev
 	zlib-dev
+	python3-dev
 	"
 makedepends="$depends_dev
 	cmake
@@ -68,6 +69,7 @@ build() {
 		-DVTK_MODULE_USE_EXTERNAL_VTK_libproj=ON \
 		-DVTK_MODULE_USE_EXTERNAL_VTK_netcdf=ON \
 		-DVTK_BUILD_TESTING="$(want_check && echo ON || echo OFF)"
+		-DVTK_WRAP_PYTHON=ON
 	cmake --build build
 }
 
