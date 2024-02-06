@@ -65,7 +65,7 @@ build() {
 		-DVTK_MODULE_USE_EXTERNAL_VTK_hdf5=ON \
 		-DVTK_MODULE_USE_EXTERNAL_VTK_libproj=ON \
 		-DVTK_MODULE_USE_EXTERNAL_VTK_netcdf=ON \
-		-DVTK_BUILD_TESTING="$(want_check && echo ON || echo OFF)"
+		-DVTK_BUILD_TESTING="$(want_check && echo ON || echo OFF)" \
 		-DVTK_WRAP_PYTHON=ON
 	cmake --build build
 }
