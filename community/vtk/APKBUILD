@@ -47,6 +47,7 @@ source="
 	https://www.vtk.org/files/release/${pkgver%.*}/VTKData-$pkgver.tar.gz
 	https://www.vtk.org/files/release/${pkgver%.*}/VTKLargeData-$pkgver.tar.gz
 	unistd.patch
+	lfs64.patch
 	"
 builddir="$srcdir/VTK-$pkgver"
 
